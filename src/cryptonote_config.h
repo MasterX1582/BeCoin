@@ -16,8 +16,8 @@ const size_t   CRYPTONOTE_MAX_TX_SIZE                        = 1000000000;
 //TODO Currency-specific address prefix
 const uint64_t CRYPTONOTE_PUBLIC_ADDRESS_BASE58_PREFIX       = 0x2;
 //TODO Choose maturity period for your currency
-const size_t   CRYPTONOTE_MINED_MONEY_UNLOCK_WINDOW          = 60;
-const uint64_t CRYPTONOTE_BLOCK_FUTURE_TIME_LIMIT            = 60 * 60 * 2;
+const size_t   CRYPTONOTE_MINED_MONEY_UNLOCK_WINDOW          = 120;
+const uint64_t CRYPTONOTE_BLOCK_FUTURE_TIME_LIMIT            = CRYPTONOTE_MINED_MONEY_UNLOCK_WINDOW * 60 * 2;
 
 const size_t   BLOCKCHAIN_TIMESTAMP_CHECK_WINDOW             = 60;
 
@@ -58,12 +58,12 @@ const uint64_t CRYPTONOTE_LOCKED_TX_ALLOWED_DELTA_SECONDS    = DIFFICULTY_TARGET
 const uint64_t CRYPTONOTE_MEMPOOL_TX_LIVETIME                = 60 * 60 * 24;     //seconds, one day
 const uint64_t CRYPTONOTE_MEMPOOL_TX_FROM_ALT_BLOCK_LIVETIME = 60 * 60 * 24 * 7; //seconds, one week
 
-const char     CRYPTONOTE_BLOCKS_FILENAME[]                  = "blocks.dat";
-const char     CRYPTONOTE_BLOCKINDEXES_FILENAME[]            = "blockindexes.dat";
-const char     CRYPTONOTE_BLOCKSCACHE_FILENAME[]             = "blockscache.dat";
-const char     CRYPTONOTE_POOLDATA_FILENAME[]                = "poolstate.bin";
-const char     P2P_NET_DATA_FILENAME[]                       = "p2pstate.bin";
-const char     MINER_CONFIG_FILE_NAME[]                      = "miner_conf.json";
+const char     CRYPTONOTE_BLOCKS_FILENAME[]                  = "Be-blocks.dat";
+const char     CRYPTONOTE_BLOCKINDEXES_FILENAME[]            = "Be-blockindexes.dat";
+const char     CRYPTONOTE_BLOCKSCACHE_FILENAME[]             = "Be-blockscache.dat";
+const char     CRYPTONOTE_POOLDATA_FILENAME[]                = "Be-poolstate.bin";
+const char     P2P_NET_DATA_FILENAME[]                       = "Be-p2pstate.bin";
+const char     MINER_CONFIG_FILE_NAME[]                      = "Be-miner_conf.json";
 } // parameters
 
 //TODO Put here the name of your currency
